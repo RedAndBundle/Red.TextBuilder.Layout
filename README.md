@@ -1,5 +1,5 @@
 # Red.TextBuilder.Layout
-Sample layouts for the Red Ink Text Templates.
+[Sample layouts](https://github.com/RedAndBundle/Red.TextBuilder.Layout/tree/main/ForNAV%20Layouts) for the Red Ink Text Templates.
 
 You can download these layouts manually or you can install them from the Red Ink Setup page in Business Central
 
