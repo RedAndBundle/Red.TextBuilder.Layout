@@ -1,9 +1,10 @@
 # Red.TextBuilder.Layout
+## Sample layouts
 [Sample layouts](https://github.com/RedAndBundle/Red.TextBuilder.Layout/tree/main/ForNAV%20Layouts) for the Red Ink Text Templates.
 
 You can download these layouts manually or you can install them from the Red Ink Setup page in Business Central
 
-# Fixed text extension
+## Fixed text extension
 [Fixed text extension](https://github.com/RedAndBundle/Red.TextBuilder.Layout/tree/main/Red%20Ink%20Fixed%20Texts)
 
 This extension will add a fixed text editor on the document pages.
