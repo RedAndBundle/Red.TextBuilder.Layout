@@ -1,0 +1,54 @@
+{
+  "id": "739a76c1-fedb-4bc9-9ea8-b466fa06795f",
+  "name": "Red Ink Fixed Texts",
+  "publisher": "Red and Bundle",
+  "version": "1.5.0.0",
+  "brief": "Fixed texts for Red Ink",
+  "description": "Fixed texts for Red Ink",
+  "privacyStatement": "https://redandbundle.com/privacy/",
+  "EULA": "https://redandbundle.com",
+  "help": "https://redandbundle.com",
+  "url": "https://redandbundle.com",
+  "logo": "images/RedBundleLogo.png",
+  "dependencies": [
+    {
+      "id": "6f0293d3-86fc-4ff8-9632-54a580be6546",
+      "name": "ForNAV Core",
+      "publisher": "ForNAV",
+      "version": "8.0.0.0"
+    },
+    {
+      "id": "83326d6d-11f8-49fd-981a-6f266a7c8d81",
+      "publisher": "ForNAV",
+      "name": "Customizable Report Pack",
+      "version": "8.0.0.0"
+    },
+    {
+      "id": "8f9a54e2-3f61-4016-9c4d-274689d5d269",
+      "publisher": "Red and Bundle",
+      "name": "Red Ink Text Templates",
+      "version": "1.5.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "26.0.0.0",
+  "application": "26.0.0.0",
+  "idRanges": [
+    {
+      "from": 84500,
+      "to": 84550
+    }
+  ],
+  "contextSensitiveHelpUrl": "https://redink.redandbundle.com/docs/introduction",
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "16.0",
+  "features": [
+    "TranslationFile",
+    "NoImplicitWith"
+  ],
+  "preprocessorSymbols": []
+}

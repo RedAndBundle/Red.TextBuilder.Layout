@@ -1,0 +1,42 @@
+{
+    "name": "BC",
+    "description": "Rules",
+    "generalAction" : "Hidden",
+    "rules": [
+        {
+            "id": "AA0214",
+            "action": "None",
+            "justification": "Not possible to solve"
+        },
+        {
+            "id": "AA0139",
+            "action": "None",
+            "justification": "Pointless rule"
+        },
+        {
+            "id": "AA0210",
+            "action": "None",
+            "justification": "Pointless rule"
+        },
+        {
+            "id": "AA0217",
+            "action": "None",
+            "justification": "No strring var is needed when no text to translate"
+        },
+        {
+            "id": "AA0204",
+            "action": "None",
+            "justification": "Pointless rule"
+        },
+        {
+            "id": "AS0084",
+            "action": "None",
+            "justification": "App not going to appsource. No need rule"
+        },
+        {
+            "id": "AS0092",
+            "action": "None",
+            "justification": "App not going to appsource. No need rule"
+        }
+    ]
+}
