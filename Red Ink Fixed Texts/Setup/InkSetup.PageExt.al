@@ -7,7 +7,6 @@ pageextension 84500 "PTE Ink Setup" extends "Red Ink Setup"
             group(PTEFixedText)
             {
                 Caption = 'Fixed Text';
-                Visible = false;
                 field("PTE Customer Fixed Text Type"; Rec."Customer Fixed Text Type")
                 {
                     ApplicationArea = All;

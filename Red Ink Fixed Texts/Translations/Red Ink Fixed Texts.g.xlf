@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Red Ink Fixed Texts">
+    <body>
+      <group id="body">
+        <trans-unit id="PageExtension 1199445331 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Contact Card - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1199445331 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Contact Card - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3000637743 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Customer Card - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3000637743 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Customer Card - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2498120704 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Item Card - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2498120704 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Item Card - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 877480651 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Posted Sales Cr. Memo - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 877480651 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Posted Sales Cr. Memo - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3189921015 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Posted Sales Invoice - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3189921015 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Posted Sales Invoice - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1064344046 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1708100201">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Credit Memo - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1064344046 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1708100201">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Credit Memo - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2292471128 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Invoice - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2292471128 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4034894651">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Invoice - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3710529829 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Order - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3710529829 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Order - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1369260977 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Quote - Control PTEInkFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1369260977 - Control 2157758265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 280137910">
+          <source>Specifies the rich text content of the text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Sales Quote - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 2350968918 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Fixed Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTEFixedText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 3082160566 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Specifies the code for the text type that will be used to create fixed texts for contacts. Fixed text is a text editor that is embedded in the card page. If a template exists for the text type, the template will be used to create the fixed text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Contact Fixed Text Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 250360434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Specifies the code for the text type that will be used to create fixed texts for customers. Fixed text is a text editor that is embedded in the card page. If a template exists for the text type, the template will be used to create the fixed text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Customer Fixed Text Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 340308825 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Specifies the code for the text type that will be used to create fixed texts for items. Fixed text is a text editor that is embedded in the card page. If a template exists for the text type, the template will be used to create the fixed text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Item Fixed Text Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 2245644590 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Specifies the code for the text type that will be used to create fixed texts for sales documents. Fixed text is a text editor that is embedded in the card page. If a template exists for the text type, the template will be used to create the fixed text.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Sales Fixed Text Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1543163638 - Control 2224935376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
+          <source>Specifies the if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Sales Flow To Transaction - Property ToolTip</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
