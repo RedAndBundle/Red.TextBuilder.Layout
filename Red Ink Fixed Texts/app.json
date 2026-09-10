@@ -2,7 +2,7 @@
   "id": "739a76c1-fedb-4bc9-9ea8-b466fa06795f",
   "name": "Red Ink Fixed Texts",
   "publisher": "Red and Bundle",
-  "version": "1.5.0.1",
+  "version": "1.6.0.0",
   "brief": "Fixed texts for Red Ink",
   "description": "Fixed texts for Red Ink",
   "privacyStatement": "https://redandbundle.com/privacy/",
@@ -31,8 +31,8 @@
     }
   ],
   "screenshots": [],
-  "platform": "26.0.0.0",
-  "application": "26.0.0.0",
+  "platform": "28.0.0.0",
+  "application": "28.0.0.0",
   "idRanges": [
     {
       "from": 84500,
@@ -45,7 +45,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "15.0",
+  "runtime": "17.0",
   "features": [
     "TranslationFile",
     "NoImplicitWith"
