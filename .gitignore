@@ -5,6 +5,12 @@
 **/.alpackages/
 *.app
 
+# machine-specific MCP config (absolute paths)
+/.mcp.json
+
+# per-developer Claude Code overrides
+.claude/settings.local.json
+
 # dependencies
 **/node_modules/
 /.pnp

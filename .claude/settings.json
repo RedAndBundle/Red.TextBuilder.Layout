@@ -1,0 +1,11 @@
+{
+  "enabledMcpjsonServers": ["al-language"],
+  "extraKnownMarketplaces": {
+    "fornav-claude-plugins": { "source": { "source": "github", "repo": "fornav/ForNav.Claude" } },
+    "red-and-bundle": { "source": { "source": "github", "repo": "RedAndBundle/Red.Claude" } }
+  },
+  "enabledPlugins": {
+    "fornav-al-tools@fornav-claude-plugins": true,
+    "red-al-tools@red-and-bundle": true
+  }
+}
