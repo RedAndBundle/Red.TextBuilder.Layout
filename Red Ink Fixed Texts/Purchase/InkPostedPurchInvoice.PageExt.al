@@ -30,17 +30,18 @@ pageextension 84521 "PTE Ink Posted Purch. Invoice" extends "Posted Purchase Inv
 
     trigger OnAfterGetCurrRecord()
     begin
-        PTEInkFixedTextVisible := PTEInkText.GetFixedTextIface(Rec, PTEInkFixedText, PTEInkFixedTextEditable);
+        PTEInkFixedTextVisible := PTEInkFixedTextMgt.GetFixedText(Rec, PTEInkText, PTEInkFixedText, PTEInkFixedTextEditable);
     end;
 
     local procedure PTEInkValidateFixedText()
     begin
         if PTEInkFixedTextVisible then
-            PTEInkText.SaveTextIface(PTEInkFixedText);
+            PTEInkFixedTextMgt.SaveFixedText(PTEInkText, PTEInkFixedText);
     end;
 
     var
         PTEInkText: Record "Red Ink Text";
+        PTEInkFixedTextMgt: Codeunit "PTE Ink Fixed Text Mgt.";
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }

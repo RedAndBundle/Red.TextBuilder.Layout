@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This folder (`Red Ink Fixed Texts`) is one of two things tracked in the `Red.TextBuilder.Layout` git repo (repo root is one level up); the other is `../ForNAV Layouts`, a set of sample `.docx` report layouts unrelated to this AL code. Everything in this folder is a single Business Central AL extension ("Red Ink Fixed Texts", publisher "Red and Bundle").
 
-The extension adds a rich-text "Fixed Text" editor field to Sales/Purchase document pages and to Customer/Contact/Item/Vendor card pages, backed by the `Red Ink Text` table and template logic from the **"Red Ink Text Templates"** app — a separate, external AL app referenced only as a dependency (id `8f9a54e2-3f61-4016-9c4d-274689d5d269` in `app.json`). That app's source is not in this repo; only its compiled symbols are available via `.alpackages`. If you need to understand `GetFixedTextIface`, `SaveTextIface`, or the `Red Ink Setup` fields referenced here, they live in that other app, not here.
+The extension adds a rich-text "Fixed Text" editor field to Sales/Purchase document pages and to Customer/Contact/Item/Vendor card pages, backed by the `Red Ink Text` table and template logic from the **"Red Ink Text Templates"** app — a separate, external AL app referenced only as a dependency (id `8f9a54e2-3f61-4016-9c4d-274689d5d269` in `app.json`). That app's source is not in this repo; only its compiled symbols are available via `.alpackages`. The fixed-text logic itself (setup, find-or-create, load/save) lives in this app; Red Ink's own fixed-text members (`GetFixedTextIface`, `SaveTextIface`, the `* Fixed Text Type` / `* Flow To Transaction` fields on `Red Ink Setup`) are being obsoleted and must not be used. A copy of the Red Ink source ships inside the `.app` in `.alpackages` (it is a zip with a header) if you need to inspect it.
 
 ## Build / package
 
@@ -39,24 +39,25 @@ pageextension <id> "PTE Ink <Name>" extends "<Base Page>"
     }
     trigger OnAfterGetCurrRecord()
     begin
-        PTEInkFixedTextVisible := PTEInkText.GetFixedTextIface(Rec, PTEInkFixedText, PTEInkFixedTextEditable);
+        PTEInkFixedTextVisible := PTEInkFixedTextMgt.GetFixedText(Rec, PTEInkText, PTEInkFixedText, PTEInkFixedTextEditable);
     end;
     local procedure PTEInkValidateFixedText()
     begin
         if PTEInkFixedTextVisible then
-            PTEInkText.SaveTextIface(PTEInkFixedText);
+            PTEInkFixedTextMgt.SaveFixedText(PTEInkText, PTEInkFixedText);
     end;
     var
         PTEInkText: Record "Red Ink Text";
+        PTEInkFixedTextMgt: Codeunit "PTE Ink Fixed Text Mgt.";
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }
 ```
 
-- `GetFixedTextIface`/`SaveTextIface` on the `Red Ink Text` record do all the real work (loading/creating the fixed text per record, based on the text type configured in `Red Ink Setup`); the page extensions are thin wiring only.
+- `PTE Ink Fixed Text Mgt.` (`General/InkFixedTextMgt.Codeunit.al`) does the real work: it resolves the text type per source table via `PTEGetFixedTextType` on the `Red Ink Setup` table extension, finds or creates the `Red Ink Text` (creation goes through Red Ink's public `Red Ink Text Interface`), and reads/writes the HTML in the `Entity Text` record (scenario `Red Ink Sales Text`). The page extensions are thin wiring only. To support a new source table, add it to `PTEGetFixedTextType`.
 - Field/group names are consistently prefixed `PTEInkFixedText*`; object names/captions use the `PTE` mandatory affix required by `AppSourceCop.json`.
-- Folders group page extensions by area: `General/` (Contact/Customer/Item/Vendor cards), `Sales/` and `Purchase/` (quote → order → posted invoice/credit memo document flow), `Setup/` (the `Red Ink Setup` page extension exposing the per-document-type text-type configuration fields, including the "flow to transaction" toggles).
-- All purchase-side objects (`Purchase/*.al` and the vendor/purchase fields in `Setup/InkSetup.PageExt.al`) are wrapped in `#if PURCH ... #endif`. There is no `PURCH` symbol defined in `app.json`'s `preprocessorSymbols`, so purchase-side code is currently compiled out by default — check with the user before assuming it should be enabled, or before adding new purchase-side objects outside that guard.
+- Folders group page extensions by area: `General/` (Contact/Customer/Item/Vendor cards), `Sales/` and `Purchase/` (quote → order → posted invoice/credit memo document flow), `Setup/` (the `Red Ink Setup` table extension holding the `PTE * Fixed Text Type` / `PTE * Flow To Transaction` fields, plus the page extension that shows them), `Install/` (install + upgrade codeunits; `PTE Ink Fixed Text Setup Upgr.` copies the obsolete Red Ink fields into the PTE fields on the same `Red Ink Setup` record once per company, guarded by an upgrade tag).
+- All purchase-side code (`Purchase/*.al`, `General/InkVendorCard.PageExt.al`, the vendor/purchase fields in `Setup/InkSetup.PageExt.al` and the vendor/purchase branches of `PTEGetFixedTextType`) is wrapped in `#if PURCH ... #endif`. `PURCH` is currently defined in `app.json`'s `preprocessorSymbols`. The table extension fields themselves are not guarded, so toggling `PURCH` never changes the schema.
 - Object IDs are allocated from the `idRanges` block in `app.json` (84500–84550); pick the next free ID in that range for new objects rather than reusing one.
 
 ## Conventions
