@@ -3,6 +3,12 @@
   <file datatype="xml" source-language="en-US" target-language="nl-NL" original="Red Ink Fixed Texts">
     <body>
       <group id="body">
+        <trans-unit id="Codeunit 1371413482 - Method 2513629802 - NamedType 35214922" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Type your text here...</source>
+          <target>Typ hier je tekst...</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit PTE Ink Fixed Text Mgt. - Method GetStandardFont - NamedType TypeYourTextLbl</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1199445331 - Control 2833997434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3542408424">
           <source>Fixed Text</source>
           <target>Vaste tekst</target>
@@ -248,6 +254,54 @@
           <target>Specificeert de rich-text-inhoud van de tekst.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Vendor Card - Control PTEInkFixedTextEditor - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 3082160566 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Contact Fixed Text Type</source>
+          <target>Vaste-teksttype contact</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Contact Fixed Text Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 250360434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Customer Fixed Text Type</source>
+          <target>Vaste-teksttype klant</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Customer Fixed Text Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 340308825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Item Fixed Text Type</source>
+          <target>Vaste-teksttype artikel</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Item Fixed Text Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 2239522202 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Purchase Flow To Transaction</source>
+          <target>Inkoop doorgeven aan transactie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Purch. Flow To Transaction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 178264587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Purchase Fixed Text Type</source>
+          <target>Vaste-teksttype inkoop</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Purchase Fixed Text Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 2245644590 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Sales Fixed Text Type</source>
+          <target>Vaste-teksttype verkoop</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Sales Fixed Text Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 2224935376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Sales Flow To Transaction</source>
+          <target>Verkoop doorgeven aan transactie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Sales Flow To Transaction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1543163638 - Field 4132124266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2464730908">
+          <source>Vendor Fixed Text Type</source>
+          <target>Vaste-teksttype leverancier</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension PTE Ink Setup - Field PTE Vendor Fixed Text Type - Property Caption</note>
         </trans-unit>
       </group>
     </body>
