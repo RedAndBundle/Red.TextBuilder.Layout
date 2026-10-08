@@ -71,7 +71,6 @@ tableextension 84530 "PTE Ink Setup" extends "Red Ink Setup"
                     TextType := "PTE Sales Fixed Text Type";
                     FlowToTransaction := "PTE Sales Flow To Transaction";
                 end;
-#if PURCH
             Database::Vendor:
                 begin
                     TextType := "PTE Vendor Fixed Text Type";
@@ -84,7 +83,6 @@ tableextension 84530 "PTE Ink Setup" extends "Red Ink Setup"
                     TextType := "PTE Purchase Fixed Text Type";
                     FlowToTransaction := "PTE Purch. Flow To Transaction";
                 end;
-#endif
         end;
 
         exit(TextType <> '');

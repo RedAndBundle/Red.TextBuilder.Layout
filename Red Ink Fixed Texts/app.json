@@ -49,8 +49,5 @@
   "features": [
     "TranslationFile",
     "NoImplicitWith"
-  ],
-  "preprocessorSymbols": [
-    "PURCH"
   ]
 }

@@ -1,4 +1,3 @@
-#if PURCH
 pageextension 84520 "PTE Ink Posted Purch. Cr. Memo" extends "Posted Purchase Credit Memo"
 {
     layout
@@ -45,4 +44,3 @@ pageextension 84520 "PTE Ink Posted Purch. Cr. Memo" extends "Posted Purchase Cr
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }
-#endif

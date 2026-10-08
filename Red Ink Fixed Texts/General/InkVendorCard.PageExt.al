@@ -1,4 +1,3 @@
-#if PURCH
 pageextension 84504 "PTE Ink Vendor Card" extends "Vendor Card"
 {
     layout
@@ -45,4 +44,3 @@ pageextension 84504 "PTE Ink Vendor Card" extends "Vendor Card"
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }
-#endif

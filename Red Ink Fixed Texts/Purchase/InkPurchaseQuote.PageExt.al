@@ -1,4 +1,3 @@
-#if PURCH
 pageextension 84525 "PTE Ink Purchase Quote" extends "Purchase Quote"
 {
     layout
@@ -45,4 +44,3 @@ pageextension 84525 "PTE Ink Purchase Quote" extends "Purchase Quote"
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }
-#endif

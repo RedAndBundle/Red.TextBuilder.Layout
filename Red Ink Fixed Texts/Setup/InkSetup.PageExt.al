@@ -32,7 +32,6 @@ pageextension 84500 "PTE Ink Setup" extends "Red Ink Setup"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.';
                 }
-#if PURCH
                 field("PTE Vendor Fixed Text Type"; Rec."PTE Vendor Fixed Text Type")
                 {
                     ApplicationArea = All;
@@ -48,7 +47,6 @@ pageextension 84500 "PTE Ink Setup" extends "Red Ink Setup"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the if the purchase fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.';
                 }
-#endif
             }
         }
     }

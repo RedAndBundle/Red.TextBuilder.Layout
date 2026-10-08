@@ -1,4 +1,3 @@
-#if PURCH
 pageextension 84521 "PTE Ink Posted Purch. Invoice" extends "Posted Purchase Invoice"
 {
     layout
@@ -45,4 +44,3 @@ pageextension 84521 "PTE Ink Posted Purch. Invoice" extends "Posted Purchase Inv
         PTEInkFixedTextEditable, PTEInkFixedTextVisible : Boolean;
         PTEInkFixedText: Text;
 }
-#endif
