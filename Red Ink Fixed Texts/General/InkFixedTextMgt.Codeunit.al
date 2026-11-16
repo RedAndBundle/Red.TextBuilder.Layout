@@ -68,6 +68,40 @@ codeunit 84531 "PTE Ink Fixed Text Mgt."
         InkText.Modify();
     end;
 
+    /// <summary>
+    /// Applies the Sales Flow To Transaction setting to all existing customer and sales header
+    /// fixed texts with the configured text type.
+    /// </summary>
+    procedure UpdateSalesFlowToTransaction(InkSetup: Record "Red Ink Setup")
+    begin
+        SetFlowToTransaction(Database::Customer, InkSetup."PTE Customer Fixed Text Type", InkSetup."PTE Sales Flow To Transaction");
+        SetFlowToTransaction(Database::"Sales Header", InkSetup."PTE Sales Fixed Text Type", InkSetup."PTE Sales Flow To Transaction");
+    end;
+
+    /// <summary>
+    /// Applies the Purchase Flow To Transaction setting to all existing vendor and purchase header
+    /// fixed texts with the configured text type.
+    /// </summary>
+    procedure UpdatePurchFlowToTransaction(InkSetup: Record "Red Ink Setup")
+    begin
+        SetFlowToTransaction(Database::Vendor, InkSetup."PTE Vendor Fixed Text Type", InkSetup."PTE Purch. Flow To Transaction");
+        SetFlowToTransaction(Database::"Purchase Header", InkSetup."PTE Purchase Fixed Text Type", InkSetup."PTE Purch. Flow To Transaction");
+    end;
+
+    local procedure SetFlowToTransaction(TableNo: Integer; TextType: Code[20]; FlowToTransaction: Boolean)
+    var
+        InkText: Record "Red Ink Text";
+    begin
+        if TextType = '' then
+            exit;
+
+        InkText.SetCurrentKey("Source Table No.", "Source System Id", Type);
+        InkText.SetRange("Source Table No.", TableNo);
+        InkText.SetRange(Type, TextType);
+        InkText.SetRange("Flow To Transaction", not FlowToTransaction);
+        InkText.ModifyAll("Flow To Transaction", FlowToTransaction);
+    end;
+
     local procedure GetText(InkText: Record "Red Ink Text") Result: Text
     var
         EntityText: Record "Entity Text";

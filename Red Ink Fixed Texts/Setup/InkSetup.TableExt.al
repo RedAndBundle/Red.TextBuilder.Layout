@@ -37,6 +37,14 @@ tableextension 84530 "PTE Ink Setup" extends "Red Ink Setup"
             Caption = 'Sales Flow To Transaction';
             DataClassification = OrganizationIdentifiableInformation;
             InitValue = true;
+
+            trigger OnValidate()
+            var
+                FixedTextMgt: Codeunit "PTE Ink Fixed Text Mgt.";
+            begin
+                if "PTE Sales Flow To Transaction" <> xRec."PTE Sales Flow To Transaction" then
+                    FixedTextMgt.UpdateSalesFlowToTransaction(Rec);
+            end;
         }
         field(84536; "PTE Purchase Fixed Text Type"; Code[20])
         {
@@ -49,6 +57,14 @@ tableextension 84530 "PTE Ink Setup" extends "Red Ink Setup"
             Caption = 'Purchase Flow To Transaction';
             DataClassification = OrganizationIdentifiableInformation;
             InitValue = true;
+
+            trigger OnValidate()
+            var
+                FixedTextMgt: Codeunit "PTE Ink Fixed Text Mgt.";
+            begin
+                if "PTE Purch. Flow To Transaction" <> xRec."PTE Purch. Flow To Transaction" then
+                    FixedTextMgt.UpdatePurchFlowToTransaction(Rec);
+            end;
         }
     }
 

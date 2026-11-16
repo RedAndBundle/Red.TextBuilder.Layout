@@ -220,8 +220,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Purchase Fixed Text Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1543163638 - Control 1094056449 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
-          <source>Specifies the if the purchase fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.</source>
-          <target>Angiver, om den faste købstekst skal flyde til transaktionen. Hvis den er sat til sand, vil den genererede tekst følge transaktionen fra tilbud, til ordre, til tilbud.</target>
+          <source>Specifies if the purchase fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to invoice. Changing this setting also updates the existing vendor and purchase document fixed texts.</source>
+          <target>Angiver, om den faste købstekst skal flyde til transaktionen. Hvis den er sat til sand, vil den genererede tekst følge transaktionen fra tilbud, til ordre, til faktura. Ændring af denne indstilling opdaterer også de eksisterende faste tekster for kreditorer og købsbilag.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Purchase Flow To Transaction - Property ToolTip</note>
         </trans-unit>
@@ -232,8 +232,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Sales Fixed Text Type - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1543163638 - Control 2224935376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2464730908">
-          <source>Specifies the if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.</source>
-          <target>Angiver, om den faste salgstekst skal flyde til transaktionen. Hvis den er sat til sand, vil den genererede tekst følge transaktionen fra tilbud, til ordre, til tilbud.</target>
+          <source>Specifies if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to invoice. Changing this setting also updates the existing customer and sales document fixed texts.</source>
+          <target>Angiver, om den faste salgstekst skal flyde til transaktionen. Hvis den er sat til sand, vil den genererede tekst følge transaktionen fra tilbud, til ordre, til faktura. Ændring af denne indstilling opdaterer også de eksisterende faste tekster for debitorer og salgsbilag.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension PTE Ink Setup - Control PTE Sales Flow To Transaction - Property ToolTip</note>
         </trans-unit>

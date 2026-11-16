@@ -30,7 +30,7 @@ pageextension 84500 "PTE Ink Setup" extends "Red Ink Setup"
                 field("PTE Sales Flow To Transaction"; Rec."PTE Sales Flow To Transaction")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.';
+                    ToolTip = 'Specifies if the sales fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to invoice. Changing this setting also updates the existing customer and sales document fixed texts.';
                 }
                 field("PTE Vendor Fixed Text Type"; Rec."PTE Vendor Fixed Text Type")
                 {
@@ -45,7 +45,7 @@ pageextension 84500 "PTE Ink Setup" extends "Red Ink Setup"
                 field("PTE Purchase Flow To Transaction"; Rec."PTE Purch. Flow To Transaction")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the if the purchase fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to quote.';
+                    ToolTip = 'Specifies if the purchase fixed text should flow to transaction. If set to true the generated text will follow the transaction from quote, to order, to invoice. Changing this setting also updates the existing vendor and purchase document fixed texts.';
                 }
             }
         }

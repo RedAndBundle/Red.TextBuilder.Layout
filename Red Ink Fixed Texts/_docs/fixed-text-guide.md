@@ -30,6 +30,12 @@ invoice/credit memo. When enabled, the text created on the quote (or order, for 
 documents copied straight to a purchase order) follows the document through to the
 posted record instead of being regenerated at each step.
 
+Changing either setting also updates the fixed texts that already exist: switching
+**Sales Flow To Transaction** on or off applies the new value to all existing customer
+and sales document fixed texts of the configured Customer and Sales Fixed Text Types;
+**Purchase Flow To Transaction** does the same for vendor and purchase document fixed
+texts. Posted documents are not changed.
+
 ## Vendor and purchase documents
 
 Vendor Card now has the same Fixed Text field as Customer Card. When **Purchase Flow To
